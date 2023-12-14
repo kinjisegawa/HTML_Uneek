@@ -1,0 +1,652 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+/* Navbar Part */
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logotemp{
+    color: black;
+    font-size: 30px;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar-container a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-container a:hover {
+    color: grey;
+}
+
+.icongroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logobtn:hover {
+    opacity: 0.6;
+}
+
+.searchbtn:hover {
+    opacity: 0.6;
+}
+
+.busgetbtn:hover {
+    opacity: 0.6;
+}
+
+.toggleicon {
+    display: none;
+    float: right;
+    position: relative;
+}
+
+.dropbtn {
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.toggleicon:hover .dropbtn {
+    background-color: #898989;
+}
+
+.toggleicon:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 2px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hero Part */
+
+.hero-container {
+    position: relative;
+    color: white;
+}
+
+.heroimage {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.title-1 {
+    position: absolute;
+    font-size: 2.08vw;
+    top: 30%;
+    left: 60%;
+}
+
+.title-2 {
+    position: absolute;
+    font-size: 3.1vw;
+    top: 40%;
+    left: 60%;
+}
+
+.title-3 {
+    position: absolute;
+    font-size: 1vw;
+    top: 60%;
+    left: 60%;
+}
+
+.title-4 {
+    position: absolute;
+    font-size: 1.5vw;
+    top: 70%;
+    left: 60%;
+}
+
+#shoplink {
+    text-decoration: none;
+    color: white;
+}
+
+#shoplink:hover {
+    color: grey;
+}
+
+#shoplink::after {
+    transition: 0.3s;
+    content: "";
+    display: block;
+    width: 3.5vw;
+    border-bottom: 0.3vw solid white;
+}
+
+#shoplink:hover::after {
+    width: 7vw;
+}
+
+/* Highlight Part */
+
+.highlight-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight-title-1 {
+    color: #243348;
+    font-family: Poppins;
+    font-size: 2.08vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112%;
+}
+
+.highlight-title-2 {
+    color: #898989;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.highlight-image {
+    position: relative;
+
+}
+
+.divider-image {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+
+.rect-1 {
+    position: absolute;
+    width: 32.13vw;
+    height: auto;
+    top: 7.18vw;
+    left: 2.15vw;
+}
+
+.rect-2 {
+    position: absolute;
+    width: 32.13vw;
+    height: auto;
+    top: 7.18vw;
+    left: 33.2vw;
+}
+
+.rect-3 {
+    position: absolute;
+    width: 32.13vw;
+    height: auto;
+    top: 7.18vw;
+    left: 64.3vw;
+}
+
+.rect-title-1 {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.97vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top: 15vw;
+    left: 26vw;
+}
+
+.rect-title-2 {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.97vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top: 15vw;
+    left: 57vw;
+}
+
+.rect-title-3 {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.97vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top: 15vw;
+    left: 88vw;
+}
+
+.rect-content-1 {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.56vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top: 17vw;
+    left: 24vw;
+}
+
+.rect-content-2 {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.56vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top: 17vw;
+    left: 52.5vw;
+}
+
+.rect-content-3 {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.56vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top: 17vw;
+    left: 83.5vw;
+}
+
+/* Great Part */
+
+.great-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.great-image-container>div {
+    width: 299.163px;
+    height: 546px;
+    display: flex;
+    flex-direction: column;
+}
+
+.great-image-container>div>img {
+    width: 299.163px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.great-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 17.054px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.great-explain {
+    color: #666;
+    font-family: Poppins;
+    font-size: 12.791px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.great-4 {
+    position: relative;
+}
+
+.great-4-content-1 {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 28.4px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.568px;
+}
+
+.great-4-content-2 {
+    position: absolute;
+    width: 120px !important;
+    height: auto;
+    top: 160px;
+    left: 89.85px;
+}
+
+.great-4-content-3 {
+    position: absolute;
+    top: 290px;
+    left: 70.8px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 28.4px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 5.969px;
+}
+
+#great-shoplink {
+    color: black;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+#great-shoplink:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+#great-shoplink::after {
+    transition: 0.3s;
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 5.76px solid #243348;
+}
+
+#great-shoplink:hover::after {
+    width: 76.8px;
+}
+
+/* Contact Part */
+
+.contact-container {
+    flex-wrap: wrap;
+}
+
+.contact-pane {
+    padding: 2vw;
+    padding-left: 6vw !important;
+}
+
+.contact-container h4,
+.contact-container input {
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5vw !important;
+}
+
+.contact-container h2 {
+    color: #243348;
+    font-family: Poppins;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-container p {
+    color: #666;
+    font-family: Poppins;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-container input {
+    color: #000;
+    font-family: Poppins;
+    font-size: 0.9vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.4vw solid #243348;
+}
+
+.contact-container input:focus {
+    outline: none;
+}
+
+.contact-pane a {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+}
+
+.contact-pane a:hover::after {
+    width: 6.5vw;
+}
+
+.contact-pane a::after {
+    transition: 0.3s;
+    content: "";
+    display: block;
+    width: 4vw;
+    border-bottom: 7.68px solid #243348;
+}
+
+.contact-image {
+    height: fit-content;
+    position: relative;
+}
+
+.playbtn {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border: none;
+    cursor: pointer;
+}
+
+.playbtn img {
+    width: 5vw;
+    height: auto;
+}
+
+.playbtn:hover {
+    opacity: 0.6;
+}
+
+/* Footer Part */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer div {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.copyright {
+    width: 400px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-link {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-link>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-link>div>a:hover {
+    color: grey;
+}
+
+/* Responseive */
+
+@media screen and (max-width: 1550px) {
+
+    .great-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-link {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .navbar {
+        display: none !important;
+    }
+
+    .toggleicon {
+        display: block;
+    }
+
+    .title-1 {
+        position: absolute;
+        font-size: 3vw;
+        top: 30%;
+        left: 60%;
+    }
+    
+    .title-2 {
+        position: absolute;
+        font-size: 4.46vw;
+        top: 40%;
+        left: 60%;
+    }
+    
+    .title-3 {
+        position: absolute;
+        font-size: 1.44vw;
+        top: 65%;
+        left: 60%;
+    }
+    
+    .title-4 {
+        position: absolute;
+        font-size: 2.16vw;
+        top: 75%;
+        left: 60%;
+    }
+
+    #shoplink::after {
+        width: 5vw;
+    }
+    
+    #shoplink:hover::after {
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .contact-pane {
+        width: 100%;
+        padding: 2vw 15vw !important;
+    }
+
+    .contact-container h4,
+    .contact-container input {
+        font-size: 3vw;
+    }
+
+    .contact-container h2 {
+        font-size: 5vw;
+    }
+
+    .contact-container p {
+        font-size: 2vw;
+    }
+
+    .contact-pane a {
+        font-size: 3vw;
+    }
+
+    .playbtn img {
+        width: 10vw;
+        height: auto;
+    }
+
+    .contact-pane a:hover::after {
+        width: 12vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .logobtn {
+        display: none !important;
+    }
+
+    .logotemp{
+        display: block;
+    }
+}
